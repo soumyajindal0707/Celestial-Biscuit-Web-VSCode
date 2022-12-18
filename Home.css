@@ -446,6 +446,7 @@ html::-webkit-scrollbar-track:hover {
   }
   .u-logo-image-1 {
     transform: scale(0.5) translate(-8px,10px);
+    height: 10px;
   }
   #blck{
     transform: translate(0,-3vh);
