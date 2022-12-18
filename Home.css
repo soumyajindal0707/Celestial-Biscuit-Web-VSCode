@@ -225,6 +225,7 @@ html::-webkit-scrollbar-track:hover {
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -245,6 +246,7 @@ html::-webkit-scrollbar-track:hover {
   display: flex;
   flex-direction: row;
   height: 400px;
+  opacity: 1;
 }
 
 #r2 {
@@ -256,6 +258,35 @@ html::-webkit-scrollbar-track:hover {
   display: flex;
   flex-direction: row;
   height: 400px;
+  opacity: 1;
+}
+
+#r3 {
+  position: relative;
+  width: 100%;
+  left: 33vw;
+  /* margin-left: 40px; */
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+}
+
+#r4 {
+  position: relative;
+  width: 100%;
+  /* margin-left: 40px; */
+  display: flex;
+  left: 33vw;
+  flex-direction: row;
+  opacity: 0;
+}
+
+#r4 .card{
+  margin-bottom: 70px;
+}
+
+#r3 .card{
+  margin-bottom: 70px;
 }
 
 .card {
@@ -361,4 +392,71 @@ html::-webkit-scrollbar-track:hover {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+@media (max-width: 1050px) {
+  #r1 {
+    opacity: 0;
+  }
+  #r2 {
+    opacity: 0;
+  }
+  #r3 {
+    opacity: 1;
+    flex-direction: column;
+  }
+  #r4 {
+    opacity: 1;
+    flex-direction: column;
+  }
+  .u-section-2 {
+    height: 300vh;
+  }
+  #vsc{
+    font-size: 80px;
+  }
+  #vsc span{
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .button {
+    width: 130px;
+  }
+  #vsc{
+    font-size: 100px;
+  }
+  #vsc span{
+    font-size: 80px;
+  }
+  
+}
+
+@media (max-width: 880px) {
+  #vs{
+    transform: translateY(5vh);
+  }
+
+  #vsc{
+    font-size: 70px;
+  }
+  #vsc span{
+    font-size: 60px;
+  }
+  
+}
+
+@media (max-width: 680px) {
+  #vs{
+    transform: translateY(4vh);
+  }
+
+  #vsc{
+    font-size: 50px;
+  }
+  #vsc span{
+    font-size: 40px;
+  }
+  
 }
