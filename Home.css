@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong&display=swap');
+
+html {
+  scrollbar-width: normal;
+  scrollbar-color: #777 #555;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  /* background-color: #4B0086; */
+  border-radius: 20%;
+  background: linear-gradient(to bottom, #db48bb, #8b26e3 87%);
+
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#D026EF), to(#852FCF));     */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to left bottom, #852FCF, #fd5fdb);
+  /* background-color: -webkit-gradient(linear, left top, left bottom, from(#852FCF), to(#D026EF)); */
+}
+
+html::-webkit-scrollbar-track {
+  background-color: rgba(241, 224, 241, 0.945);
+}
+
+html::-webkit-scrollbar-track:hover {
+  background-color: rgb(222, 220, 220);
+}
+
+.u-section-1 {
+  background-image: url("images/photo_2022-12-17_22-05-12236535.jpg");
+  background-position: 50% 50%;
+  min-height: 810px;
+}
+
+.u-section-2 {
+  transform: translateY(-40px);
+  height: 1100px;
+}
+
+.u-footer {
+  transform: translateY(-40px);
+  height: 20vh;
+  margin-bottom: -10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.u-palette-1-base {
+  transform: translateY(-40px);
+}
+
+.u-logo-image-1 {
+  margin-left: 60px;
+}
+
+.u-image-2 {
+  transform: translateX(60px);
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 {
+    min-height: 683px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 {
+    min-height: 574px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 {
+    min-height: 442px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 {
+    min-height: 231px;
+  }
+}
+
+.u-section-2 {
+  min-height: 242px;
+  background-image: linear-gradient(to right, #de28f1, #8631d2);
+}
+
+#vs {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(4vw, 15vh);
+  text-transform: uppercase;
+}
+
+#vsc {
+  position: absolute;
+  width: 1138px;
+  height: 260px;
+  left: 55px;
+
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 130.667px;
+  line-height: 260px;
+
+  color: #4B0086;
+  object-position: fixed;
+
+}
+
+#vsc span {
+  font-size: 110px;
+}
+
+.scroll-down {
+  z-index: 12000;
+  height: 50px;
+  width: 30px;
+  border: transparent;
+  position: absolute;
+  left: 49.62%;
+  top: -170px;
+  cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid #FFFDFD;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 60%;
+    opacity: 0;
+  }
+}
+
+#sec-b285 #drk2 {
+  background-image: url(cb3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.scroll-up {
+  z-index: 12;
+  height: 50px;
+  width: 30px;
+  border: transparent;
+  position: absolute;
+  left: 49.62%;
+  top: 20px;
+  cursor: pointer;
+}
+
+.scroll-up::before,
+.scroll-up::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid #FFFDFD;
+  border-bottom: transparent;
+  border-right: transparent;
+  animation: scroll-up 1s ease-in-out infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 60%;
+    opacity: 0;
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pen-title {
+  text-align: center;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+}
+
+#r1 {
+  position: absolute;
+  left: 154px;
+  top: 105px;
+  width: 100%;
+  /* margin-left: 40px; */
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+}
+
+#r2 {
+  position: absolute;
+  left: 154px;
+  top: 464px;
+  width: 100%;
+  /* margin-left: 40px; */
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+}
+
+.card {
+  position: relative;
+  width: 267px;
+  height: 275px;
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  box-shadow: 2px 2px 5px #999;
+  border-radius: 20px;
+  margin-right: 150px;
+  /* margin-left: 70px; */
+  transition: box-shadow 0.5s;
+  transition: transform 0.4s;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 50px #666;
+  transform: scale(1.47, 1.53);
+}
+
+.card-image {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  top: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #666;
+}
+
+.card-title {
+  position: absolute;
+  top: 147px;
+  font-family: 'Noto Serif NP Hmong', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 45px;
+  /* identical to box height */
+
+
+  color: #4B0086;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  /* font-weight: 100;
+  font-size: 0.75em; */
+}
+
+.button {
+  display: flex;
+  border-radius: 4px;
+  background-color: #5B0F9B;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  width: 200px;
+  height: 38.34px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 53px;
+}
+
+.button span {
+  margin-top: 1px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

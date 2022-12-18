@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: normal;
+  scrollbar-color: #777 #555;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  /* background-color: #4B0086; */
+  border-radius: 20%;
+  background: linear-gradient(to bottom, #db48bb, #8b26e3 87%);
+
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#D026EF), to(#852FCF));     */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to left bottom, #852FCF, #fd5fdb);
+  /* background-color: -webkit-gradient(linear, left top, left bottom, from(#852FCF), to(#D026EF)); */
+}
+
+html::-webkit-scrollbar-track {
+  background-color: rgba(241, 224, 241, 0.945);
+}
+
+html::-webkit-scrollbar-track:hover {
+  background-color: rgb(222, 220, 220);
+}
+
+.u-logo-image-1 {
+  margin-left: 60px;
+}
+
+.u-image-2 {
+  transform: translateX(60px);
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  margin-left: 24%;
+  display: flex;
+  width: 50vw;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  -webkit-transition: all 700ms ease-in;
+}
+
+.panel #gradient {
+  background-color: black;
+  opacity: 0.6;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.panel #gradient2 {
+  background: linear-gradient(to top, #000000 0%, #0000009a 20%, #00000064 38%, #0000000d 50%, #00000000 100%);
+  opacity: 1;
+  height: 100%;
+  border-radius: 50px;
+  transform: translateY(-100%);
+}
+
+.panel h3 {
+  font-size: 120%;
+  font-family: 'Noto Serif NP Hmong', serif;
+  line-height: 160%;
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 4;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel.active #gradient {
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+#side{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  transform: translate(40vw,10vh);
+}
+
+#sc-icons2{
+  display: flex;
+  flex-direction: column;
+  transform: translate(21.5vw,32%);
+}
+
+#sc-icons2 p{
+  margin-top: 8.8%;
+  color: rgb(84, 7, 157);
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+#sc-icons{
+  display: flex;
+  flex-direction: column;
+  transform: translate(22vw,30%);
+}
+
+#sc-icons .circle{
+  background-image: url(images/ss2.png);
+  background-size: cover;
+  background-repeat: no-repeat;  margin-top: 36%;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#sc-icons .circle:hover{
+  transform: translateY(-10%);
+  transform: scale(1.1);
+}
+
+#sc-icons .circle p{
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-60%);
+  font-size: 100%;
+  font-weight: bold;
+}
+
+#sc-icons .circle a{
+  color: white;
+}
+
+.u-footer {
+  bottom: 0%;
+  transform: translateY(70vh);
+}
+
+.section-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 23vh 0 5vh;
+  text-align: center
+}
+
+.section-medium-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px
+}
+
+.section-screen-height {
+  background-color: #000
+}
+
+.section-small-wrapper {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 10px
+}
+
+.section-screen-height {
+  height: 90vh
+}
+
+.color-title {
+  background-image: url(images/ss2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.upper-case-bold {
+  font-family: 'Plumb Bold';
+  text-transform: uppercase
+}
+
+.button-2border__Wrapper {
+  margin: auto
+}
+
+.button-2border {
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+  padding: 10px 40px;
+  font-family: 'Plumb Bold';
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 50px rgba(0, 253, 255, .4);
+  border-radius: 20px;
+  border: solid 2px #979797
+}
+
+.button-2border::after {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: solid 2px #979797;
+  transition: ease-in-out .15s
+}
+
+.button-2border__large {
+  font-size: 117px
+}
+
+.button-2border:hover {
+  color: #5cbf60;
+  border: solid 2px #5cbf60;
+  text-shadow: 0 2px 50px rgba(0, 253, 255, .4)
+}
+
+.button-2border:hover::after {
+  border: solid 2px rgba(92, 191, 96, .3)
+}
+
+@font-face {
+  font-family: 'Plumb light';
+  src: url(../fonts/Plumb/plumb-light.otf);
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Plumb medium';
+  src: url(../fonts/Plumb/plumb-medium.otf);
+  font-weight: 500;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Plumb regular';
+  src: url(../fonts/Plumb/plumb-regular.otf);
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Plumb Bold';
+  src: url(../fonts/Plumb/plumb-bold.otf);
+  font-style: normal
+}
+
+.section-introduction {
+  background: url(../img/bg/synterium-start.png) 50% 50% no-repeat;
+  background-size: cover;
+  text-align: center
+}
+
+.section-introduction h1 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 70px;
+  text-align: left
+}
+
+.section-introduction h1::after {
+  position: absolute;
+  width: 90px;
+  height: 4px;
+  background: url(images/ss2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  bottom: -4px
+}
+
+.section-introduction h1 span {
+  display: block
+}
+
+.section-introduction .section-wrapper {
+  padding: 23vh 0 100px
+}
+
+.section-inner-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto
+}
+
+.section-news .section-wrapper {
+  padding: 16vh 0 100px
+}
+
+.double-border-item {
+  position: relative;
+  max-width: 730px;
+  width: 100%;
+  border-radius: 20px;
+  border: solid 2px #bc5cbf;
+  text-align: left
+}
+
+.double-border-item:nth-of-type(even) {
+  margin: 0 30px
+}
+
+.double-border-item .img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 195px;
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  z-index: 1
+}
+
+.double-border-item .img-wrapper img {
+  display: block;
+  height: 100%;
+  max-width: 100%
+}
+
+.double-border-item .text-container {
+  padding: 10px 30px 10px
+}
+
+.double-border-item .text-container p {
+  padding-bottom: 40px
+}
+
+.double-border-item::after {
+  position: absolute;
+  top: 18px;
+  right: -12px;
+  content: "";
+  width: 100%;
+  max-width: 730px;
+  height: 100%;
+  border-radius: 20px;
+  border: solid 2px rgba(127, 92, 191, 0.3)
+}
+
+.section-about-platform {
+  background: url(../img/bg/synterium-background3.png) 50% 50% no-repeat;
+  background-size: cover;
+  text-align: center
+}
+
+.section-about-platform .section-wrapper {
+  width: 100%;
+  max-width: 547px;
+  padding: 23vh 10px 100px;
+  text-align: left
+}
+
+.section-about-platform .section-wrapper p {
+  text-align: left
+}
+
+.section-about-project {
+  background: url(../img/bg/actual-project-bg.png) 50% 50% no-repeat;
+  background-size: cover;
+  text-align: center
+}
+
+.section-about-project .section-wrapper {
+  width: 100%;
+  max-width: 870px;
+  padding: 23vh 10px 100px;
+  text-align: left
+}
+
+.item-slide-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.item-slide-wrapper h4 {
+  margin: 0
+}
+
+.item-slide-right {
+  padding-left: 52px
+}
+
+.item-slide-left::after {
+  position: absolute;
+  width: 190px;
+  height: 4px;
+  background: url(images/ss2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  left: 0;
+  bottom: 140px
+}
+
+#divider {
+  position: absolute;
+  width: 290px;
+  height: 4px;
+  background: url(images/ss2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  margin-top: 2%;
+  left: 30%;
+}
+
+.section-reasons {
+  background: url(../img/bg/synterium-background-why.png) 50% 50% no-repeat;
+  background-size: cover;
+  text-align: center
+}
+
+.section-reasons .double-border-item h6 {
+  margin: 20px 0
+}
+
+.section-reasons .double-border-item::after {
+  top: 10px;
+  left: -10px
+}
+
+.section-details {
+  background: url(../img/bg/synterium-background-4.png) 50% 50% no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex
+}
+
+.section-details-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0 85px
+}
+
+.section-details-wrapper div {
+  width: 50%;
+  max-width: 480px;
+  padding: 10px;
+  text-align: left
+}
+
+.section-details-wrapper div:nth-of-type(even) {
+  margin-left: 5vw
+}
+
+.section-screen-height i{
+  color: #bc5cbf;
+}
