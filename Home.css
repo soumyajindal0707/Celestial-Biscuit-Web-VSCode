@@ -444,7 +444,21 @@ html::-webkit-scrollbar-track:hover {
   #vsc span{
     font-size: 60px;
   }
-  
+  .u-logo-image-1 {
+    transform: scale(0.7) translate(-8px,10px);
+  }
+  #blck{
+    transform: translate(0,-3vh);
+  }  
+  #cnt {
+    transform: translate(-10vw,-10vh);
+  }
+  .scroll-down {
+    transform: translate(10vw,8vh);
+  }
+  .scroll-up {
+    transform: translate(10vw,0);
+  }    
 }
 
 @media (max-width: 680px) {
